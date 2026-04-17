@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICpEP.se - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="centered-layout">
+    <div class="terminal-panel" style="width: 400px; text-align: center; border-left-color: var(--caution-orange);">
+        <div class="header-section" style="margin-bottom: 20px;">
+            <h2 style="color: var(--neon-blue);">NEW REGISTRATION</h2>
+        </div>
+        
+        <form id="signupForm" style="display: flex; flex-direction: column; gap: 15px;">
+            <input type="text" id="user" placeholder="CREATE USERNAME" required>
+            <input type="password" id="pass" placeholder="CREATE PASSWORD" required>
+            <input type="password" id="confirmPass" placeholder="RE-ENTER PASSWORD" required>
+            
+            <button type="submit" class="action-btn btn-danger" style="width: 100%;">SIGN UP</button>
+        </form>
+        
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="index.html" style="color: var(--terminal-green); text-decoration: none; font-size: 0.8rem;">BACK TO LOGIN</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

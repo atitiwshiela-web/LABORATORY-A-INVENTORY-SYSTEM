@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab A - Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tech-bg">
+    <div style="max-width: 1400px; margin: 20px auto; padding: 20px;">
+        <h1 style="color: #00d4ff; text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); font-size: 2rem; margin-bottom: 30px;">HISTORY</h1>
+        
+        <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: center;">
+            <input type="text" id="historySearch" placeholder="SEARCH..." onkeyup="filterHistory()" 
+                   style="flex-grow: 1; background: #ffffff; border: 1px solid #1a1d23; color: #000000; padding: 10px;">
+            <button class="action-btn btn-danger" onclick="clearAllHistory()" style="border-color: #ff0055; color: #ff0055;">CLEAR ALL</button>
+            <button class="action-btn" onclick="location.href='inventory.html'">BACK TO INVENTORY</button>
+        </div>
+
+        <table class="tech-table" style="width: 100%; border-collapse: collapse; background: #FFFF">
+            <thead>
+                <tr style="background: #FFFF; color: #11141b; text-align: left; font-size: 0.8rem;">
+                    <th style="padding: 15px;">DATE</th>
+                    <th>STATION</th>
+                    <th>MONITOR</th>
+                    <th>MOUSE</th>
+                    <th>KEYBOARD</th>
+                    <th>SYSTEM UNIT</th>
+                    <th>NOTES</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="historyBody">
+                </tbody>
+        </table>
+
+        <div style="margin-top: 20px;">
+            <button class="action-btn" onclick="location.href='inventory.html'">BACK TO INVENTORY</button>
+            <button class="action-btn" onclick="location.href='dashboard.html'">BACK TO DASHBOARD</button>
+            <button class="action-btn btn-danger" onclick="manualLogout()">LOG OUT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

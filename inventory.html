@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab A - Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="tech-bg">
+    <div class="terminal-panel">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+            <div>DATE: <input type="text" id="setupDate" value="APRIL 15, 2026" style="background:none; border:none; color:var(--terminal-green); font-family:inherit; width: 150px;"></div>
+            <div>STATION COUNT: <span class="text-cyan">24</span></div>
+            <button class="action-btn" onclick="saveInventory()">SAVE INVENTORY</button>
+        </div>
+
+        <div id="pcGrid" class="grid-container">
+            </div>
+
+        <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap;">
+            <button class="action-btn" onclick="window.print()">Print</button>
+            <button class="action-btn" onclick="saveInventory()">SAVE INVENTORY</button>
+            <button class="action-btn" onclick="location.href='history.html'">HISTORY</button>
+            <button class="action-btn btn-danger" onclick="location.href='dashboard.html'">DASHBOARD</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

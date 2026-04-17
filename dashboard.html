@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mainframe - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="centered-layout">
+    <header style="text-align: center; margin-bottom: 2rem;">
+        <h1 style="letter-spacing: 5px; color: var(--terminal-green); margin: 0;">DASHBOARD TERMINAL</h1>
+        <p style="color: var(--terminal-green); opacity: 0.6;">OPERATIONAL OVERSIGHT</p>
+    </header>
+
+    <div class="terminal-panel" style="width: 500px; text-align: center;">
+        <h2 style="margin-bottom: 1rem; color: var(--terminal-green);">WELCOME TO</h2>
+        <h1 style="margin-bottom: 1rem; color: var(--neon-blue);">LAB A INVENTORY SYSTEM</h1>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <button class="action-btn" onclick="location.href='inventory.html'">INVENTORY</button>
+            <button class="action-btn" onclick="location.href='history.html'">HISTORY</button>
+        </div>
+        <div style="margin-top: 2.5rem;">
+            <button class="action-btn btn-danger" onclick="manualLogout()">LOG OUT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
